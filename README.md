@@ -1,1 +1,4 @@
-# project-management
+# Code set up:
+
+- npm install
+- ng serve
