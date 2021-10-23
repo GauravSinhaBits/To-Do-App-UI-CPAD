@@ -9,7 +9,7 @@ import { map } from 'rxjs/operators';
 })
 export class AssignmentService {
 
-  baseUrl = 'http://localhost:3636';
+  baseUrl = 'https://assignmentservice.azurewebsites.net';
   constructor(
     private _httpClientService: HttpClientService,
     private _httpClient: HttpClient,

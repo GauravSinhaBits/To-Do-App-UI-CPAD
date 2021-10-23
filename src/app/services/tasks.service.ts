@@ -9,7 +9,7 @@ import { map } from 'rxjs/operators';
 })
 export class TasksService {
 
-  baseUrl = 'http://localhost:3434';
+  baseUrl = 'https://tasknotesservice.azurewebsites.net';
   constructor(
     private _httpClientService: HttpClientService,
     private _httpClient: HttpClient,
