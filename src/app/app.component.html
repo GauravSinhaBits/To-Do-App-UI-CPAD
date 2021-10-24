@@ -1,7 +1,7 @@
 <body>
   <div class="content">
     <div class="content-inside">
-      <nav class="navbar navbar-dark bg-dark navbar-expand-lg">
+      <!-- <nav class="navbar navbar-dark bg-dark navbar-expand-lg">
         
         <div class="collapse navbar-collapse" id="navbarTogglerDemo02">
           <ul class="navbar-nav mr-auto" style="padding-left: 8.5em;">
@@ -22,8 +22,40 @@
           </ul>         
           
         </div>
-      </nav>
+      </nav> -->
 
+
+      <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+        <div class="container-fluid">
+          <div class="navbar-nav titlestyle">
+            <a href="#" class="nav-item nav-link">MyLineUpApp</a>
+        </div>
+            <!-- <a href="#" class="navbar-brand">MyLineUpApp</a> -->
+            <button type="button" class="navbar-toggler" data-bs-toggle="collapse" data-bs-target="#navbarCollapse">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarCollapse">
+                <div class="navbar-nav  ms-auto">
+                    <!-- <a href="#" class="nav-item nav-link active">Home</a>
+                    <a href="#" class="nav-item nav-link">Profile</a>                  
+                    <a href="#" class="nav-item nav-link disabled" tabindex="-1">Reports</a> -->
+                    <ul class="navbar-nav ms-auto mb-2 mb-lg-0">
+                      <li class="nav-item active"  (click)="selectedTab = 'users'">
+                        <a class="nav-link" href="#">USERS</a>
+                      </li>
+                      <li class="nav-item">
+                        <a class="nav-link" href="#" (click)="selectedTab = 'tasks'">TASKS</a>
+                      </li>
+                      <li class="nav-item">
+                        <a class="nav-link" href="#" style="padding-right: 12em;" (click)="selectedTab = 'assignments'">ASSIGNMENTS</a>
+                      </li>            
+                    </ul>  
+
+                </div>
+                
+            </div>
+        </div>
+    </nav>
 
       
       <div class="container" style="padding: 2rem;">
