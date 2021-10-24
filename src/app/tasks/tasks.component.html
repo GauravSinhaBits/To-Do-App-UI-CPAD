@@ -7,7 +7,7 @@
     </div>
     <div class="row">
         <div class="col-md-12">
-            <input type="text" name="username" [(ngModel)]="myModel" type="text" placeholder="Enter Users Name" class="form-control">
+            <input type="text" name="username" [(ngModel)]="myModel" type="text" placeholder="Enter Task" class="form-control">
             <button type="submit" class="btn btn-primary mt-4" *ngIf="!isEdit" (click)="addUser()">Add Task</button>
             <button type="submit" class="btn btn-primary mt-4" *ngIf="isEdit" (click)="editUser()">Update Task</button>
         </div>
